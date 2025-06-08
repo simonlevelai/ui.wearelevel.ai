@@ -1,0 +1,78 @@
+{
+  "color": {
+    "brand": {
+      "earthstone": {
+        "value": "#293f3b",
+        "type": "color",
+        "description": "Primary dark color for text and borders"
+      },
+      "paledawn": {
+        "value": "#ffffdc",
+        "type": "color", 
+        "description": "Light background color"
+      },
+      "sunsetcoral": {
+        "value": "#ff7f7a",
+        "type": "color",
+        "description": "Accent coral for errors and warnings"
+      },
+      "sunshine": {
+        "value": "#feda00",
+        "type": "color",
+        "description": "Primary yellow for buttons and highlights"
+      },
+      "amberglow": {
+        "value": "#ff9012",
+        "type": "color",
+        "description": "Secondary orange"
+      },
+      "terragreen": {
+        "value": "#296b42",
+        "type": "color",
+        "description": "Success green"
+      },
+      "verdantspring": {
+        "value": "#94da18",
+        "type": "color",
+        "description": "Bright accent green"
+      }
+    },
+    "semantic": {
+      "primary": {
+        "value": "{color.brand.sunshine.value}",
+        "type": "color",
+        "description": "Primary action color"
+      },
+      "secondary": {
+        "value": "{color.brand.amberglow.value}",
+        "type": "color",
+        "description": "Secondary action color"
+      },
+      "success": {
+        "value": "{color.brand.terragreen.value}",
+        "type": "color",
+        "description": "Success state color"
+      },
+      "warning": {
+        "value": "{color.brand.amberglow.value}",
+        "type": "color",
+        "description": "Warning state color"
+      },
+      "error": {
+        "value": "{color.brand.sunsetcoral.value}",
+        "type": "color",
+        "description": "Error state color"
+      },
+      "foreground": {
+        "value": "{color.brand.earthstone.value}",
+        "type": "color",
+        "description": "Primary text color"
+      },
+      "background": {
+        "value": "{color.brand.paledawn.value}",
+        "type": "color",
+        "description": "Primary background color"
+      }
+    }
+  }
+}

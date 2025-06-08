@@ -1,0 +1,33 @@
+{
+  "name": "@levelai/design-tokens",
+  "version": "1.0.0",
+  "description": "Level AI Design Tokens - Centralized design decisions",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js"
+    },
+    "./css": "./dist/tokens.css",
+    "./scss": "./dist/tokens.scss",
+    "./json": "./dist/tokens.json",
+    "./js": "./dist/tokens.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "style-dictionary build --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["design-tokens", "style-dictionary", "levelai"],
+  "author": "Level AI",
+  "license": "MIT",
+  "devDependencies": {
+    "style-dictionary": "^4.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  }
+}

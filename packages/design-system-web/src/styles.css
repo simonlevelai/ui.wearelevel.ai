@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Concert+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme - Level AI branding */
+    --background: 60 100% 93%; /* paledawn base */
+    --foreground: 147 20% 21%; /* earthstone */
+    --card: 0 0% 100%; /* pure white for cards */
+    --card-foreground: 147 20% 21%; /* earthstone */
+    --popover: 0 0% 100%;
+    --popover-foreground: 147 20% 21%;
+    --primary: 48 100% 50%; /* sunshine */
+    --primary-foreground: 147 20% 21%; /* earthstone */
+    --secondary: 25 100% 53%; /* amberglow */
+    --secondary-foreground: 147 20% 21%;
+    --muted: 147 8% 92%; /* very light earthstone */
+    --muted-foreground: 147 10% 45%;
+    --accent: 147 8% 92%;
+    --accent-foreground: 147 20% 21%;
+    --destructive: 4 86% 74%; /* sunsetcoral */
+    --destructive-foreground: 147 20% 21%;
+    --success: 145 42% 30%; /* terragreen */
+    --success-foreground: 60 100% 93%;
+    --warning: 25 100% 53%; /* amberglow */
+    --warning-foreground: 147 20% 21%;
+    --border: 147 15% 85%;
+    --input: 147 15% 85%;
+    --ring: 48 100% 50%; /* sunshine for focus rings */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark theme - Level AI dark mode */
+    --background: 147 25% 8%; /* very dark earthstone */
+    --foreground: 60 100% 93%; /* paledawn */
+    --card: 147 20% 12%; /* dark earthstone for cards */
+    --card-foreground: 60 100% 93%;
+    --popover: 147 20% 12%;
+    --popover-foreground: 60 100% 93%;
+    --primary: 48 100% 50%; /* sunshine stays bright */
+    --primary-foreground: 147 25% 8%; /* dark background for contrast */
+    --secondary: 25 100% 53%; /* amberglow */
+    --secondary-foreground: 147 25% 8%;
+    --muted: 147 15% 18%; /* darker muted */
+    --muted-foreground: 60 40% 75%;
+    --accent: 147 15% 18%;
+    --accent-foreground: 60 100% 93%;
+    --destructive: 4 86% 74%; /* sunsetcoral */
+    --destructive-foreground: 147 25% 8%;
+    --success: 145 42% 35%; /* slightly brighter terragreen */
+    --success-foreground: 60 100% 93%;
+    --warning: 25 100% 53%; /* amberglow */
+    --warning-foreground: 147 25% 8%;
+    --border: 147 12% 25%;
+    --input: 147 12% 25%;
+    --ring: 48 100% 50%; /* sunshine for focus rings */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "font": {
+    "family": {
+      "sans": {
+        "value": ["DM Sans", "system-ui", "sans-serif"],
+        "type": "fontFamily",
+        "description": "Primary font family for body text"
+      },
+      "display": {
+        "value": ["Concert One", "system-ui", "sans-serif"],
+        "type": "fontFamily",
+        "description": "Display font family for headings and emphasis"
+      }
+    },
+    "size": {
+      "xs": {
+        "value": "0.75rem",
+        "type": "dimension",
+        "description": "Extra small text"
+      },
+      "sm": {
+        "value": "0.875rem",
+        "type": "dimension",
+        "description": "Small text"
+      },
+      "base": {
+        "value": "1rem",
+        "type": "dimension",
+        "description": "Base text size"
+      },
+      "lg": {
+        "value": "1.125rem",
+        "type": "dimension",
+        "description": "Large text"
+      },
+      "xl": {
+        "value": "1.25rem",
+        "type": "dimension",
+        "description": "Extra large text"
+      },
+      "2xl": {
+        "value": "1.5rem",
+        "type": "dimension",
+        "description": "2x large text"
+      },
+      "3xl": {
+        "value": "1.875rem",
+        "type": "dimension",
+        "description": "3x large text"
+      }
+    },
+    "weight": {
+      "normal": {
+        "value": "400",
+        "type": "fontWeight",
+        "description": "Normal font weight"
+      },
+      "medium": {
+        "value": "500",
+        "type": "fontWeight",
+        "description": "Medium font weight"
+      },
+      "semibold": {
+        "value": "600",
+        "type": "fontWeight",
+        "description": "Semi-bold font weight"
+      },
+      "bold": {
+        "value": "700",
+        "type": "fontWeight",
+        "description": "Bold font weight"
+      },
+      "extrabold": {
+        "value": "800",
+        "type": "fontWeight",
+        "description": "Extra bold font weight"
+      }
+    }
+  }
+}

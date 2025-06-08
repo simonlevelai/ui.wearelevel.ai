@@ -1,0 +1,21 @@
+{
+  "name": "@levelai/ui",
+  "version": "1.0.0",
+  "description": "Level AI Design System",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "storybook": "turbo run storybook --parallel",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

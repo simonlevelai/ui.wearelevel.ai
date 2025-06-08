@@ -1,0 +1,91 @@
+{
+  "spacing": {
+    "0": {
+      "value": "0",
+      "type": "dimension",
+      "description": "No spacing"
+    },
+    "1": {
+      "value": "0.25rem",
+      "type": "dimension",
+      "description": "Extra small spacing"
+    },
+    "2": {
+      "value": "0.5rem",
+      "type": "dimension",
+      "description": "Small spacing"
+    },
+    "3": {
+      "value": "0.75rem",
+      "type": "dimension",
+      "description": "Medium-small spacing"
+    },
+    "4": {
+      "value": "1rem",
+      "type": "dimension",
+      "description": "Base spacing unit"
+    },
+    "5": {
+      "value": "1.25rem",
+      "type": "dimension",
+      "description": "Medium spacing"
+    },
+    "6": {
+      "value": "1.5rem",
+      "type": "dimension",
+      "description": "Medium-large spacing"
+    },
+    "8": {
+      "value": "2rem",
+      "type": "dimension",
+      "description": "Large spacing"
+    },
+    "10": {
+      "value": "2.5rem",
+      "type": "dimension",
+      "description": "Extra large spacing"
+    },
+    "12": {
+      "value": "3rem",
+      "type": "dimension",
+      "description": "2x large spacing"
+    },
+    "16": {
+      "value": "4rem",
+      "type": "dimension",
+      "description": "3x large spacing"
+    }
+  },
+  "radius": {
+    "none": {
+      "value": "0",
+      "type": "dimension",
+      "description": "No border radius"
+    },
+    "sm": {
+      "value": "0.25rem",
+      "type": "dimension",
+      "description": "Small border radius"
+    },
+    "base": {
+      "value": "0.5rem",
+      "type": "dimension",
+      "description": "Base border radius"
+    },
+    "md": {
+      "value": "0.75rem",
+      "type": "dimension",
+      "description": "Medium border radius"
+    },
+    "lg": {
+      "value": "1rem",
+      "type": "dimension",
+      "description": "Large border radius"
+    },
+    "full": {
+      "value": "9999px",
+      "type": "dimension",
+      "description": "Full border radius (circular)"
+    }
+  }
+}
