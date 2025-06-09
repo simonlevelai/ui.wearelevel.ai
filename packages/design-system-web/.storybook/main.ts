@@ -31,6 +31,12 @@ const config: StorybookConfig = {
       },
       optimizeDeps: {
         include: ['@storybook/react-vite'],
+        exclude: ['@storybook/blocks'],
+      },
+      server: {
+        fs: {
+          strict: false,
+        },
       },
       css: {
         postcss: path.resolve(__dirname, '../postcss.config.js'),

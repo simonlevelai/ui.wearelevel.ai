@@ -6,7 +6,7 @@ import { Button } from '../components/ui/button'
 import { Input } from '../components/ui/input'
 import { Alert, AlertDescription, AlertTitle } from '../components/ui/alert'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs'
-import { Sun, Moon, AlertCircle, CheckCircle2 } from 'lucide-react'
+import { AlertCircle, CheckCircle2 } from 'lucide-react'
 
 const meta: Meta<typeof ThemeToggle> = {
   title: 'Components/ThemeToggle',

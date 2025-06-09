@@ -19,8 +19,13 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-  render: () => (
-    <Accordion type="single" collapsible className="w-full max-w-md">
+  args: {
+    type: "single",
+    collapsible: true,
+    className: "w-full max-w-md"
+  },
+  render: (args: any) => (
+    <Accordion {...args}>
       <AccordionItem value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
         <AccordionContent>
@@ -44,8 +49,12 @@ export const Default: Story = {
 }
 
 export const Multiple: Story = {
-  render: () => (
-    <Accordion type="multiple" className="w-full max-w-md">
+  args: {
+    type: "multiple",
+    className: "w-full max-w-md"
+  },
+  render: (args: any) => (
+    <Accordion {...args}>
       <AccordionItem value="item-1">
         <AccordionTrigger>Can I open multiple items?</AccordionTrigger>
         <AccordionContent>
@@ -69,8 +78,14 @@ export const Multiple: Story = {
 }
 
 export const DefaultOpen: Story = {
-  render: () => (
-    <Accordion type="single" collapsible defaultValue="item-2" className="w-full max-w-md">
+  args: {
+    type: "single",
+    collapsible: true,
+    defaultValue: "item-2",
+    className: "w-full max-w-md"
+  },
+  render: (args: any) => (
+    <Accordion {...args}>
       <AccordionItem value="item-1">
         <AccordionTrigger>First Item</AccordionTrigger>
         <AccordionContent>
@@ -94,10 +109,14 @@ export const DefaultOpen: Story = {
 }
 
 export const FAQ: Story = {
-  render: () => (
+  args: {
+    type: "single",
+    collapsible: true
+  },
+  render: (args: any) => (
     <div className="w-full max-w-2xl">
       <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
-      <Accordion type="single" collapsible>
+      <Accordion {...args}>
         <AccordionItem value="item-1">
           <AccordionTrigger>What is Level AI?</AccordionTrigger>
           <AccordionContent>
@@ -134,8 +153,13 @@ export const FAQ: Story = {
 }
 
 export const Nested: Story = {
-  render: () => (
-    <Accordion type="single" collapsible className="w-full max-w-lg">
+  args: {
+    type: "single",
+    collapsible: true,
+    className: "w-full max-w-lg"
+  },
+  render: (args: any) => (
+    <Accordion {...args}>
       <AccordionItem value="item-1">
         <AccordionTrigger>Product Features</AccordionTrigger>
         <AccordionContent>

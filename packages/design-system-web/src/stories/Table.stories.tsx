@@ -9,7 +9,6 @@ import {
   TableRow,
 } from '../components/ui/table'
 import { Button } from '../components/ui/button'
-import { Badge } from '../components/ui/badge'
 
 // Let's create a simple Badge component for the table
 const SimpleBadge = ({ children, variant = 'default' }: { children: React.ReactNode, variant?: 'default' | 'success' | 'warning' | 'destructive' }) => {

@@ -1,4 +1,5 @@
 import type { Preview } from '@storybook/react'
+import { themes } from '@storybook/theming'
 import '../src/styles.css'
 
 const preview: Preview = {
@@ -15,7 +16,7 @@ const preview: Preview = {
     },
     darkMode: {
       dark: { 
-        ...require('@storybook/theming').themes.dark,
+        ...themes.dark,
         appBg: '#0f1317',
         appContentBg: '#1a1f24',
         appBorderColor: '#293f3b',
@@ -23,7 +24,7 @@ const preview: Preview = {
         brandUrl: 'https://level.ai',
       },
       light: { 
-        ...require('@storybook/theming').themes.normal,
+        ...themes.normal,
         appBg: '#ffffdc',
         appContentBg: '#ffffff',
         appBorderColor: '#e5e7eb',
