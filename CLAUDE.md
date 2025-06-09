@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 This is the Level AI design system monorepo (`ui.wearelevel.ai`) containing:
-- **packages/design-system-web**: React components with Tailwind CSS + shadcn/ui
+- **packages/design-system-web**: React components with Tailwind CSS + shadcn/ui (19 components)
 - **packages/design-system-native**: React Native components with NativeWind
 - **packages/design-tokens**: Centralized design tokens (colors, typography, spacing)
 
@@ -35,6 +35,38 @@ fontFamily: {
   display: ['"Concert One"', 'cursive'],    // Headlines
 }
 ```
+
+## Component Library
+
+The design system includes 19 production-ready React components:
+
+### Core Components
+- **Button** - 7 variants (default, destructive, outline, secondary, ghost, link, success)
+- **Input** - with validation states and sizing
+- **Textarea** - multiline text input with error states
+- **Label** - accessible form labels
+
+### Layout & Display
+- **Card** - container with header, content, and footer sections
+- **Badge** - status indicators with 6 variants
+- **Table** - data display with sorting capabilities
+- **Skeleton** - loading state placeholders
+- **Accordion** - collapsible content sections
+
+### Interactive Components
+- **Dialog/Modal** - accessible modal dialogs
+- **Select/Dropdown** - custom dropdown menus
+- **Checkbox** - with indeterminate state
+- **RadioGroup** - single choice selections
+- **Switch/Toggle** - on/off controls
+- **Tabs** - tabbed navigation
+- **Progress** - progress indicators
+
+### Feedback & Utilities
+- **Alert** - 4 variants for notifications
+- **Toast** - temporary notifications with actions
+- **Tooltip** - contextual help tooltips
+- **ThemeToggle** - dark/light mode switcher
 
 ## Development Commands
 
