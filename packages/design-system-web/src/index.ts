@@ -107,6 +107,28 @@ export {
   SheetDescription,
 } from './components/ui/sheet'
 export { HoverCard, HoverCardTrigger, HoverCardContent } from './components/ui/hover-card'
+export {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+  CarouselDots,
+} from './components/ui/carousel'
+export { Calendar } from './components/ui/calendar'
+export { DatePicker, DateRangePicker } from './components/ui/date-picker'
+export {
+  Command,
+  CommandDialog,
+  CommandInput,
+  CommandList,
+  CommandEmpty,
+  CommandGroup,
+  CommandItem,
+  CommandShortcut,
+  CommandSeparator,
+} from './components/ui/command'
+export { DataTable } from './components/ui/data-table'
 
 // Providers
 export { ThemeProvider } from './components/theme-provider'
