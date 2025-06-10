@@ -72,6 +72,41 @@ export {
   AccordionItem,
   AccordionTrigger,
 } from './components/ui/accordion'
+export { Avatar, AvatarImage, AvatarFallback } from './components/ui/avatar'
+export { Separator } from './components/ui/separator'
+export {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+  BreadcrumbEllipsis,
+} from './components/ui/breadcrumb'
+export {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from './components/ui/pagination'
+export { Slider } from './components/ui/slider'
+export { Popover, PopoverTrigger, PopoverContent } from './components/ui/popover'
+export {
+  Sheet,
+  SheetPortal,
+  SheetOverlay,
+  SheetTrigger,
+  SheetClose,
+  SheetContent,
+  SheetHeader,
+  SheetFooter,
+  SheetTitle,
+  SheetDescription,
+} from './components/ui/sheet'
+export { HoverCard, HoverCardTrigger, HoverCardContent } from './components/ui/hover-card'
 
 // Providers
 export { ThemeProvider } from './components/theme-provider'

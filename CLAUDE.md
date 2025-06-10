@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 This is the Level AI design system monorepo (`ui.wearelevel.ai`) containing:
-- **packages/design-system-web**: React components with Tailwind CSS + shadcn/ui (19 components)
+- **packages/design-system-web**: React components with Tailwind CSS + shadcn/ui (29 components)
 - **packages/design-system-native**: React Native components with NativeWind
 - **packages/design-tokens**: Centralized design tokens (colors, typography, spacing)
 
@@ -38,7 +38,7 @@ fontFamily: {
 
 ## Component Library
 
-The design system includes 19 production-ready React components:
+The design system includes 29 production-ready React components:
 
 ### Core Components
 - **Button** - 7 variants (default, destructive, outline, secondary, ghost, link, success)
@@ -67,6 +67,16 @@ The design system includes 19 production-ready React components:
 - **Toast** - temporary notifications with actions
 - **Tooltip** - contextual help tooltips
 - **ThemeToggle** - dark/light mode switcher
+
+### Extended Components
+- **Avatar** - user/profile images with fallback
+- **Separator** - visual dividers
+- **Breadcrumb** - navigation path display
+- **Pagination** - page navigation controls
+- **Slider** - range input control
+- **Popover** - floating content panels
+- **Sheet** - slide-out drawers/panels
+- **HoverCard** - content on hover
 
 ## Development Commands
 
