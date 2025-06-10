@@ -144,7 +144,7 @@ export const Dialog: Story = {
   },
 }
 
-export const Search: Story = {
+export const SearchExample: Story = {
   args: {},
   render: () => {
     const [searchQuery, setSearchQuery] = useState("")
