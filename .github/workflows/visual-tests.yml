@@ -33,7 +33,8 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build Storybook
-        run: pnpm build-storybook --filter=@wearelevelai/design-system-web
+        run: pnpm build-storybook
+        working-directory: packages/design-system-web
 
       - name: Run visual regression tests
         run: |
