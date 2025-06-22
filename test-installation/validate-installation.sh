@@ -94,7 +94,7 @@ echo "6. Storybook Test"
 echo "----------------"
 STORYBOOK_URL="https://wearelevelai.github.io/ui.wearelevel.ai/"
 echo "Checking Storybook deployment at: $STORYBOOK_URL"
-if curl -s --head "$STORYBOOK_URL" | head -n 1 | grep -q "200 OK"; then
+if curl -s --head "$STORYBOOK_URL" | head -n 1 | grep -q "200"; then
     echo -e "${GREEN}✅ Storybook is live and accessible${NC}"
     TESTS_PASSED=$((TESTS_PASSED + 1))
 else
