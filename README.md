@@ -40,10 +40,10 @@ verdantspring: #94da18   /* Bright green */
 
 ```bash
 # Install the design system components
-npm install @simonlevelai/design-system-web
+npm install @levelai/design-system-web
 
 # Install design tokens (optional)
-npm install @simonlevelai/design-tokens
+npm install @levelai/design-tokens
 ```
 
 #### Registry Configuration
@@ -51,7 +51,7 @@ npm install @simonlevelai/design-tokens
 Add this to your `.npmrc` file to install from GitHub Packages:
 
 ```
-@simonlevelai:registry=https://npm.pkg.github.com
+@levelai:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
 ```
 
@@ -77,7 +77,7 @@ packages/
 ### 🧪 Component Usage
 
 ```tsx
-import { Button, Input, Card, CardHeader, CardTitle, CardContent } from '@simonlevelai/design-system-web'
+import { Button, Input, Card, CardHeader, CardTitle, CardContent } from '@levelai/design-system-web'
 
 // Level AI branded button
 <Button variant="default">Primary Action</Button>

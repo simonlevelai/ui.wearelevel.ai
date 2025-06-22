@@ -6,10 +6,10 @@ Centralized design tokens for the Level AI design system, providing consistent c
 
 ```bash
 # Install via GitHub Packages
-npm install @simonlevelai/design-tokens
+npm install @levelai/design-tokens
 
 # Or with pnpm
-pnpm add @simonlevelai/design-tokens
+pnpm add @levelai/design-tokens
 ```
 
 ### Registry Configuration
@@ -17,7 +17,7 @@ pnpm add @simonlevelai/design-tokens
 Add this to your `.npmrc` file:
 
 ```
-@simonlevelai:registry=https://npm.pkg.github.com
+@levelai:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
 ```
 
@@ -35,7 +35,7 @@ Add this to your `.npmrc` file:
 ### TypeScript/JavaScript
 
 ```typescript
-import { tokens, getColor, getSpacing } from '@simonlevelai/design-tokens'
+import { tokens, getColor, getSpacing } from '@levelai/design-tokens'
 
 // Access color tokens
 const primaryColor = tokens.color.semantic.primary // '#feda00'
@@ -48,7 +48,7 @@ const spacing = getSpacing('4') // '1rem'
 ### CSS Custom Properties
 
 ```css
-@import '@simonlevelai/design-tokens/css';
+@import '@levelai/design-tokens/css';
 
 .my-component {
   background-color: var(--background);
@@ -60,7 +60,7 @@ const spacing = getSpacing('4') // '1rem'
 ### SCSS Variables
 
 ```scss
-@import '@simonlevelai/design-tokens/scss';
+@import '@levelai/design-tokens/scss';
 
 .my-component {
   background-color: $color-semantic-background;
@@ -72,7 +72,7 @@ const spacing = getSpacing('4') // '1rem'
 ### JSON Data
 
 ```javascript
-import tokens from '@simonlevelai/design-tokens/json'
+import tokens from '@levelai/design-tokens/json'
 
 console.log(tokens.color.light.primary.value) // 'oklch(0.8918 0.1838 96.9730)'
 ```
