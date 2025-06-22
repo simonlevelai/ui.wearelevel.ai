@@ -1,5 +1,5 @@
 {
-  "name": "@levelai/design-tokens",
+  "name": "@simonlevelai/design-tokens",
   "version": "1.0.0",
   "description": "Level AI Design Tokens - Centralized design decisions",
   "type": "module",

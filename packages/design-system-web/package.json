@@ -1,5 +1,5 @@
 {
-  "name": "@levelai/design-system-web",
+  "name": "@simonlevelai/design-system-web",
   "version": "1.0.0",
   "description": "Level AI Web Design System Components",
   "main": "dist/index.js",

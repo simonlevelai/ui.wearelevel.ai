@@ -6,10 +6,10 @@ A comprehensive React component library built with Tailwind CSS, OKLCH color sys
 
 ```bash
 # Install via GitHub Packages
-npm install @levelai/design-system-web
+npm install @simonlevelai/design-system-web
 
 # Or with pnpm
-pnpm add @levelai/design-system-web
+pnpm add @simonlevelai/design-system-web
 ```
 
 ### Registry Configuration
@@ -17,15 +17,15 @@ pnpm add @levelai/design-system-web
 Add this to your `.npmrc` file:
 
 ```
-@levelai:registry=https://npm.pkg.github.com
+@simonlevelai:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
 ```
 
 ## Quick Start
 
 ```jsx
-import { Button, Card, Input } from '@levelai/design-system-web'
-import '@levelai/design-system-web/styles.css'
+import { Button, Card, Input } from '@simonlevelai/design-system-web'
+import '@simonlevelai/design-system-web/styles.css'
 
 function App() {
   return (
