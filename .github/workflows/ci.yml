@@ -37,6 +37,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
+      - name: Setup npmrc for CI
+        run: echo "registry=https://registry.npmjs.com" > .npmrc
+        
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
