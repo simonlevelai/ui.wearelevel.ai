@@ -4,17 +4,17 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '../../lib/utils'
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:translate-x-[1px] active:translate-y-[1px] active:shadow-sm',
   {
     variants: {
       variant: {
-        default: 'bg-sunshine text-earthstone hover:bg-sunshine/90 shadow-sm',
-        destructive: 'bg-sunsetcoral text-earthstone hover:bg-sunsetcoral/90',
-        outline: 'border border-earthstone bg-transparent text-earthstone hover:bg-earthstone hover:text-paledawn',
-        secondary: 'bg-amberglow text-earthstone hover:bg-amberglow/90 shadow-sm',
-        ghost: 'text-earthstone hover:bg-earthstone/10',
-        link: 'text-earthstone underline-offset-4 hover:underline',
-        success: 'bg-terragreen text-paledawn hover:bg-terragreen/90 shadow-sm',
+        default: 'bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg',
+        destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-md hover:shadow-lg',
+        outline: 'border border-border bg-background text-foreground hover:bg-accent hover:text-accent-foreground shadow-sm hover:shadow-md',
+        secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-md hover:shadow-lg',
+        ghost: 'text-foreground hover:bg-accent hover:text-accent-foreground',
+        link: 'text-primary underline-offset-4 hover:underline',
+        success: 'bg-chart-2 text-background hover:bg-chart-2/90 shadow-md hover:shadow-lg',
       },
       size: {
         default: 'h-10 px-4 py-2',

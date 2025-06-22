@@ -8,52 +8,67 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Level AI Brand Colors
-        earthstone: '#293f3b',
-        paledawn: '#ffffdc', 
-        sunsetcoral: '#ff7f7a',
-        sunshine: '#feda00',
-        amberglow: '#ff9012',
-        terragreen: '#296b42',
-        verdantspring: '#94da18',
+        // Level AI Brand Colors (now using CSS custom properties)
+        earthstone: 'var(--foreground)',
+        paledawn: 'var(--background)', 
+        sunsetcoral: 'var(--destructive)',
+        sunshine: 'var(--primary)',
+        amberglow: 'var(--secondary)',
+        terragreen: 'var(--chart-2)',
+        verdantspring: 'var(--chart-3)',
         
-        // Semantic color mappings
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
+        // Design system semantic colors
+        border: 'var(--border)',
+        input: 'var(--input)',
+        ring: 'var(--ring)',
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
         primary: {
-          DEFAULT: '#feda00', // sunshine
-          foreground: '#293f3b', // earthstone
+          DEFAULT: 'var(--primary)',
+          foreground: 'var(--primary-foreground)',
         },
         secondary: {
-          DEFAULT: '#ff9012', // amberglow
-          foreground: '#293f3b', // earthstone
+          DEFAULT: 'var(--secondary)',
+          foreground: 'var(--secondary-foreground)',
         },
         destructive: {
-          DEFAULT: '#ff7f7a', // sunsetcoral
-          foreground: '#293f3b', // earthstone
-        },
-        success: {
-          DEFAULT: '#296b42', // terragreen
-          foreground: '#ffffdc', // paledawn
+          DEFAULT: 'var(--destructive)',
+          foreground: 'var(--destructive-foreground)',
         },
         muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
+          DEFAULT: 'var(--muted)',
+          foreground: 'var(--muted-foreground)',
         },
         accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
+          DEFAULT: 'var(--accent)',
+          foreground: 'var(--accent-foreground)',
         },
         popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))',
+          DEFAULT: 'var(--popover)',
+          foreground: 'var(--popover-foreground)',
         },
         card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))',
+          DEFAULT: 'var(--card)',
+          foreground: 'var(--card-foreground)',
+        },
+        // Chart colors
+        chart: {
+          1: 'var(--chart-1)',
+          2: 'var(--chart-2)',
+          3: 'var(--chart-3)',
+          4: 'var(--chart-4)',
+          5: 'var(--chart-5)',
+        },
+        // Sidebar colors
+        sidebar: {
+          DEFAULT: 'var(--sidebar)',
+          foreground: 'var(--sidebar-foreground)',
+          primary: 'var(--sidebar-primary)',
+          'primary-foreground': 'var(--sidebar-primary-foreground)',
+          accent: 'var(--sidebar-accent)',
+          'accent-foreground': 'var(--sidebar-accent-foreground)',
+          border: 'var(--sidebar-border)',
+          ring: 'var(--sidebar-ring)',
         },
       },
       fontFamily: {
@@ -64,6 +79,16 @@ module.exports = {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+      },
+      boxShadow: {
+        '2xs': 'var(--shadow-2xs)',
+        'xs': 'var(--shadow-xs)',
+        'sm': 'var(--shadow-sm)',
+        'DEFAULT': 'var(--shadow)',
+        'md': 'var(--shadow-md)',
+        'lg': 'var(--shadow-lg)',
+        'xl': 'var(--shadow-xl)',
+        '2xl': 'var(--shadow-2xl)',
       },
       keyframes: {
         'accordion-down': {

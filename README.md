@@ -36,19 +36,32 @@ terragreen: #296b42      /* Success green */
 verdantspring: #94da18   /* Bright green */
 ```
 
+### 📦 Installation
+
+```bash
+# Install the design system components
+npm install @levelai/design-system-web
+
+# Install design tokens (optional)
+npm install @levelai/design-tokens
+```
+
+#### Registry Configuration
+
+Add this to your `.npmrc` file to install from GitHub Packages:
+
+```
+@levelai:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
+```
+
 ### 🚀 Quick Start
 
 ```bash
-# Install dependencies
+# Development
 pnpm install
-
-# Build all packages
 pnpm build
-
-# Run Storybook
 pnpm storybook --filter=@levelai/design-system-web
-
-# Run tests
 pnpm test --filter=@levelai/design-system-web
 ```
 
@@ -56,9 +69,9 @@ pnpm test --filter=@levelai/design-system-web
 
 ```
 packages/
-├── design-system-web/     # React components for web
+├── design-system-web/     # React components for web (33 components)
 ├── design-system-native/  # React Native components (planned)
-└── design-tokens/         # Centralized design tokens (planned)
+└── design-tokens/         # Centralized design tokens (OKLCH colors)
 ```
 
 ### 🧪 Component Usage

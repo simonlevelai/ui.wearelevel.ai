@@ -1,77 +1,134 @@
 {
   "color": {
+    "light": {
+      "background": {
+        "value": "oklch(0.9664 0.0011 197.1385)",
+        "type": "color",
+        "description": "Light theme background"
+      },
+      "foreground": {
+        "value": "oklch(0.3479 0.0286 181.9951)",
+        "type": "color",
+        "description": "Light theme foreground"
+      },
+      "card": {
+        "value": "oklch(0.8918 0.1838 96.9730)",
+        "type": "color",
+        "description": "Light theme card background"
+      },
+      "primary": {
+        "value": "oklch(0.8918 0.1838 96.9730)",
+        "type": "color",
+        "description": "Light theme primary color"
+      },
+      "secondary": {
+        "value": "oklch(0.7418 0.1569 23.8896)",
+        "type": "color",
+        "description": "Light theme secondary color"
+      },
+      "destructive": {
+        "value": "oklch(0.7418 0.1569 23.8896)",
+        "type": "color",
+        "description": "Light theme destructive color"
+      },
+      "muted": {
+        "value": "oklch(0.9754 0.0011 197.1387)",
+        "type": "color",
+        "description": "Light theme muted color"
+      },
+      "accent": {
+        "value": "oklch(0.9284 0.0035 174.4774)",
+        "type": "color",
+        "description": "Light theme accent color"
+      },
+      "border": {
+        "value": "oklch(0.3479 0.0286 181.9951)",
+        "type": "color",
+        "description": "Light theme border color"
+      }
+    },
+    "dark": {
+      "background": {
+        "value": "oklch(0.2497 0.0305 234.1628)",
+        "type": "color",
+        "description": "Dark theme background"
+      },
+      "foreground": {
+        "value": "oklch(0.9306 0.0197 349.0785)",
+        "type": "color",
+        "description": "Dark theme foreground"
+      },
+      "card": {
+        "value": "oklch(0.2902 0.0299 233.5352)",
+        "type": "color",
+        "description": "Dark theme card background"
+      },
+      "primary": {
+        "value": "oklch(0.9195 0.0801 87.6670)",
+        "type": "color",
+        "description": "Dark theme primary color"
+      },
+      "secondary": {
+        "value": "oklch(0.7794 0.0803 4.1330)",
+        "type": "color",
+        "description": "Dark theme secondary color"
+      },
+      "destructive": {
+        "value": "oklch(0.6702 0.1806 350.3599)",
+        "type": "color",
+        "description": "Dark theme destructive color"
+      },
+      "muted": {
+        "value": "oklch(0.2713 0.0086 255.5780)",
+        "type": "color",
+        "description": "Dark theme muted color"
+      },
+      "accent": {
+        "value": "oklch(0.6699 0.0988 356.9762)",
+        "type": "color",
+        "description": "Dark theme accent color"
+      },
+      "border": {
+        "value": "oklch(0.3907 0.0399 242.2181)",
+        "type": "color",
+        "description": "Dark theme border color"
+      }
+    },
     "brand": {
       "earthstone": {
         "value": "#293f3b",
         "type": "color",
-        "description": "Primary dark color for text and borders"
+        "description": "Legacy: Primary dark color"
       },
       "paledawn": {
         "value": "#ffffdc",
         "type": "color", 
-        "description": "Light background color"
+        "description": "Legacy: Light background color"
       },
       "sunsetcoral": {
         "value": "#ff7f7a",
         "type": "color",
-        "description": "Accent coral for errors and warnings"
+        "description": "Legacy: Accent coral"
       },
       "sunshine": {
         "value": "#feda00",
         "type": "color",
-        "description": "Primary yellow for buttons and highlights"
+        "description": "Legacy: Primary yellow"
       },
       "amberglow": {
         "value": "#ff9012",
         "type": "color",
-        "description": "Secondary orange"
+        "description": "Legacy: Secondary orange"
       },
       "terragreen": {
         "value": "#296b42",
         "type": "color",
-        "description": "Success green"
+        "description": "Legacy: Success green"
       },
       "verdantspring": {
         "value": "#94da18",
         "type": "color",
-        "description": "Bright accent green"
-      }
-    },
-    "semantic": {
-      "primary": {
-        "value": "{color.brand.sunshine.value}",
-        "type": "color",
-        "description": "Primary action color"
-      },
-      "secondary": {
-        "value": "{color.brand.amberglow.value}",
-        "type": "color",
-        "description": "Secondary action color"
-      },
-      "success": {
-        "value": "{color.brand.terragreen.value}",
-        "type": "color",
-        "description": "Success state color"
-      },
-      "warning": {
-        "value": "{color.brand.amberglow.value}",
-        "type": "color",
-        "description": "Warning state color"
-      },
-      "error": {
-        "value": "{color.brand.sunsetcoral.value}",
-        "type": "color",
-        "description": "Error state color"
-      },
-      "foreground": {
-        "value": "{color.brand.earthstone.value}",
-        "type": "color",
-        "description": "Primary text color"
-      },
-      "background": {
-        "value": "{color.brand.paledawn.value}",
-        "type": "color",
-        "description": "Primary background color"
+        "description": "Legacy: Bright accent green"
       }
     }
   }

@@ -37,6 +37,12 @@ const config: StorybookConfig = {
         fs: {
           strict: false,
         },
+        watch: {
+          usePolling: false,
+        },
+        hmr: {
+          port: 6007,
+        },
       },
       css: {
         postcss: path.resolve(__dirname, '../postcss.config.js'),

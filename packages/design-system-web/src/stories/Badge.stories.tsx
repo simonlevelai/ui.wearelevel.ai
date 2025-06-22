@@ -11,6 +11,16 @@ const meta = {
   args: {
     children: 'Badge',
   },
+  argTypes: {
+    variant: {
+      control: 'select',
+      options: ['default', 'secondary', 'destructive', 'success', 'warning', 'outline', 'ghost'],
+    },
+    size: {
+      control: 'select',
+      options: ['sm', 'default', 'lg'],
+    },
+  },
 } satisfies Meta<typeof Badge>
 
 export default meta
@@ -57,15 +67,42 @@ export const Warning: Story = {
   },
 }
 
+export const Ghost: Story = {
+  args: {
+    variant: 'ghost',
+    children: 'Ghost',
+  },
+}
+
 export const AllVariants: Story = {
   render: () => (
     <div className="flex flex-wrap gap-2">
       <Badge>Default</Badge>
       <Badge variant="secondary">Secondary</Badge>
       <Badge variant="destructive">Destructive</Badge>
-      <Badge variant="outline">Outline</Badge>
       <Badge variant="success">Success</Badge>
       <Badge variant="warning">Warning</Badge>
+      <Badge variant="outline">Outline</Badge>
+      <Badge variant="ghost">Ghost</Badge>
+    </div>
+  ),
+}
+
+export const AllSizes: Story = {
+  render: () => (
+    <div className="flex flex-wrap items-center gap-4">
+      <div className="flex flex-col items-center gap-2">
+        <Badge size="sm">Small</Badge>
+        <span className="text-xs text-muted-foreground">Small</span>
+      </div>
+      <div className="flex flex-col items-center gap-2">
+        <Badge size="default">Default</Badge>
+        <span className="text-xs text-muted-foreground">Default</span>
+      </div>
+      <div className="flex flex-col items-center gap-2">
+        <Badge size="lg">Large</Badge>
+        <span className="text-xs text-muted-foreground">Large</span>
+      </div>
     </div>
   ),
 }
@@ -128,6 +165,42 @@ export const CountBadges: Story = {
       <Badge>9</Badge>
       <span className="text-sm">Messages</span>
       <Badge variant="destructive">99+</Badge>
+    </div>
+  ),
+}
+
+export const BrutalistShowcase: Story = {
+  render: () => (
+    <div className="flex flex-col gap-6 p-6">
+      <h3 className="text-lg font-display font-bold">Badge System with Brutalist Shadows</h3>
+      
+      <div className="space-y-4">
+        <div>
+          <h4 className="text-sm font-medium mb-2">Status Indicators</h4>
+          <div className="flex gap-2">
+            <Badge variant="success" size="lg">✓ Verified Account</Badge>
+            <Badge variant="warning" size="lg">⚠ Pending Review</Badge>
+            <Badge variant="destructive" size="lg">✗ Access Denied</Badge>
+          </div>
+        </div>
+        
+        <div>
+          <h4 className="text-sm font-medium mb-2">Level AI Metrics</h4>
+          <div className="flex gap-2">
+            <Badge variant="default">Primary Model</Badge>
+            <Badge variant="secondary">Backup Ready</Badge>
+            <Badge variant="ghost">Draft Config</Badge>
+          </div>
+        </div>
+        
+        <div>
+          <h4 className="text-sm font-medium mb-2">Interactive Badges</h4>
+          <div className="flex gap-2">
+            <Badge className="cursor-pointer hover:scale-105 transition-transform">Click Me</Badge>
+            <Badge variant="outline" className="cursor-pointer hover:scale-105 transition-transform">Hover Effect</Badge>
+          </div>
+        </div>
+      </div>
     </div>
   ),
 }

@@ -3,17 +3,17 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '../../lib/utils'
 
 const alertVariants = cva(
-  'relative w-full rounded-lg border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground [&>svg~*]:pl-7',
+  'relative w-full rounded-lg border px-4 py-3 text-sm shadow-md transition-all [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground [&>svg~*]:pl-7',
   {
     variants: {
       variant: {
-        default: 'bg-background text-foreground border-earthstone/20',
+        default: 'bg-background text-foreground border-border',
         destructive:
-          'border-sunsetcoral/50 bg-sunsetcoral/10 text-earthstone [&>svg]:text-sunsetcoral',
+          'border-destructive/50 bg-destructive/10 text-foreground [&>svg]:text-destructive',
         success:
-          'border-terragreen/50 bg-terragreen/10 text-earthstone [&>svg]:text-terragreen',
+          'border-chart-2/50 bg-chart-2/10 text-foreground [&>svg]:text-chart-2',
         warning:
-          'border-amberglow/50 bg-amberglow/10 text-earthstone [&>svg]:text-amberglow',
+          'border-secondary/50 bg-secondary/10 text-foreground [&>svg]:text-secondary',
       },
     },
     defaultVariants: {

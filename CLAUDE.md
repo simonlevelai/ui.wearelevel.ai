@@ -12,20 +12,43 @@ This is the Level AI design system monorepo (`ui.wearelevel.ai`) containing:
 ## Architecture
 
 - **Monorepo**: TurboRepo + pnpm for fast, deterministic builds
-- **Component Strategy**: shadcn/ui as base, customized with Level AI brand tokens
-- **Styling**: Tailwind CSS with custom Level AI color palette
+- **Component Strategy**: shadcn/ui as base, customized with OKLCH color system
+- **Styling**: Tailwind CSS + CSS custom properties with brutalist shadows
+- **Color System**: OKLCH color space for perceptual uniformity and accessibility
+- **Theming**: CSS custom properties enable dynamic light/dark theme switching
 - **Documentation**: Storybook with accessibility checks built-in
 - **CI/CD**: GitHub Actions for build, test, and automatic publishing
 
-## Level AI Brand Tokens
+## Color System & CSS Architecture
 
+The design system uses **OKLCH color space** with **CSS custom properties** for dynamic theming:
+
+```css
+/* CSS Custom Properties (styles.css) */
+:root {
+  --background: oklch(0.9664 0.0011 197.1385);    /* Light theme background */
+  --foreground: oklch(0.3479 0.0286 181.9951);    /* Text color */
+  --primary: oklch(0.8918 0.1838 96.9730);        /* Primary yellow */
+  --secondary: oklch(0.7418 0.1569 23.8896);      /* Secondary orange */
+  --destructive: oklch(0.7418 0.1569 23.8896);    /* Error/destructive */
+  --shadow-md: 3px 3px 0px 0px hsl(0 0% 80.7843% / 1.00); /* Brutalist shadows */
+}
+
+.dark {
+  --background: oklch(0.2497 0.0305 234.1628);    /* Dark theme background */
+  --foreground: oklch(0.9306 0.0197 349.0785);    /* Dark theme text */
+  --primary: oklch(0.9195 0.0801 87.6670);        /* Dark theme primary */
+}
+```
+
+### Legacy Brand Colors (backward compatibility)
 ```javascript
 colors: {
-  earthstone: '#293f3b',     // Primary dark
-  paledawn: '#ffffdc',       // Light background
-  sunsetcoral: '#ff7f7a',    // Accent coral
-  sunshine: '#feda00',       // Primary yellow
-  amberglow: '#ff9012',      // Secondary orange
+  earthstone: '#293f3b',     // Primary dark → mapped to --foreground
+  paledawn: '#ffffdc',       // Light background → mapped to --background  
+  sunsetcoral: '#ff7f7a',    // Accent coral → mapped to --destructive
+  sunshine: '#feda00',       // Primary yellow → mapped to --primary
+  amberglow: '#ff9012',      // Secondary orange → mapped to --secondary
   terragreen: '#296b42',     // Success green
   verdantspring: '#94da18',  // Bright green
 }
@@ -34,6 +57,17 @@ fontFamily: {
   sans: ['"DM Sans"', 'sans-serif'],        // Body text
   display: ['"Concert One"', 'cursive'],    // Headlines
 }
+```
+
+### Brutalist Shadow System
+- `shadow-sm`: Border effect with subtle offset
+- `shadow-md`: 3px offset brutalist shadow (default)
+- `shadow-lg`: 4px offset for elevated elements
+- `shadow-xl`: 5px offset for prominent elements
+
+All interactive components include press animations:
+```css
+active:translate-x-[1px] active:translate-y-[1px] active:shadow-sm
 ```
 
 ## Component Library
@@ -252,7 +286,14 @@ import { Button as NativeButton } from '@levelai/design-system-native'
 
 ## Notes
 
-- Always customize shadcn/ui components with Level AI brand tokens
+- Always use CSS custom properties (not hard-coded colors) in components
 - Maintain consistency between web and native component APIs
 - Use design tokens package to prevent drift between platforms
 - Test components in consuming applications before major releases
+- OKLCH colors provide better perceptual uniformity than HSL
+- All interactive components should include press animations
+- Use semantic color names (primary, secondary) instead of brand names
+
+## Migration Information
+
+See `/docs/MIGRATION_GUIDE.md` for detailed migration instructions from the legacy HSL system to the new OKLCH architecture.
