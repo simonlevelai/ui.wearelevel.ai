@@ -3,18 +3,18 @@
   "version": "1.0.0",
   "description": "Level AI Web Design System Components",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.esm.js",
+      "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     },
     "./styles.css": "./dist/styles.css"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --external react",
+    "build": "tsup src/index.ts --format cjs,esm --dts --external react && cp src/styles.css dist/styles.css",
     "dev": "tsup src/index.ts --format cjs,esm --dts --external react --watch",
     "test": "jest",
     "lint": "eslint src --ext .ts,.tsx",
