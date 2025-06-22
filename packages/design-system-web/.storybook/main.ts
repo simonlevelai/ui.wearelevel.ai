@@ -9,7 +9,7 @@ const config: StorybookConfig = {
     '@storybook/addon-a11y',
     'storybook-dark-mode',
   ],
-  staticDirs: ['../public'],
+  staticDirs: [],
   framework: {
     name: '@storybook/react-vite',
     options: {},
