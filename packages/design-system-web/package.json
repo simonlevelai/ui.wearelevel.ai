@@ -1,6 +1,6 @@
 {
   "name": "@wearelevelai/design-system-web",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Level AI Web Design System Components",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
