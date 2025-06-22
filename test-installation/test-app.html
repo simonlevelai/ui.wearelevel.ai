@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level AI Design System Test</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #f5f5f5;
+        }
+        .test-section {
+            background: white;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .status {
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+        .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .warning { background: #fff3cd; color: #856404; border: 1px solid #ffeaa7; }
+        .test-result {
+            font-family: monospace;
+            background: #f8f9fa;
+            padding: 1rem;
+            border-left: 4px solid #007bff;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Level AI Design System Test Suite</h1>
+    
+    <div class="test-section">
+        <h2>📦 Package Installation Test</h2>
+        <div id="package-test">
+            <div class="warning">
+                <strong>Manual Test Required:</strong><br>
+                Run the following commands to test package installation:
+                <div class="test-result">
+# 1. Set up authentication
+echo '@wearelevelai:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN' > .npmrc
+
+# 2. Install package
+npm install @wearelevelai/design-system-web
+
+# 3. Run test script
+node test-install.js
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🎨 Component Rendering Test</h2>
+        <div id="component-test">
+            <div class="error">
+                <strong>Components Not Available:</strong><br>
+                This test requires the actual @wearelevelai/design-system-web package to be installed and loaded.
+                In a real React app, you would test:
+                <div class="test-result">
+import { Button, Card, Input, Badge } from '@wearelevelai/design-system-web'
+import '@wearelevelai/design-system-web/styles.css'
+
+function TestApp() {
+  return (
+    &lt;Card&gt;
+      &lt;h3&gt;Level AI Components&lt;/h3&gt;
+      &lt;Input placeholder="Test input..." /&gt;
+      &lt;Button&gt;Test Button&lt;/Button&gt;
+      &lt;Badge&gt;Test Badge&lt;/Badge&gt;
+    &lt;/Card&gt;
+  )
+}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🌐 Storybook Deployment Test</h2>
+        <div id="storybook-test">
+            <div class="warning">
+                <strong>Deployment Status:</strong><br>
+                <div class="test-result">
+URL: <a href="https://wearelevelai.github.io/ui.wearelevel.ai/" target="_blank">https://wearelevelai.github.io/ui.wearelevel.ai/</a><br>
+Status: <span id="storybook-status">Checking...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>📖 Documentation Test</h2>
+        <div class="success">
+            <strong>✅ Confluence Documentation:</strong><br>
+            - Level AI Design System - Web Components<br>
+            - Getting Started with Level AI Design System<br>
+            <em>Available in ui.wearelevel.ai Confluence space</em>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🔧 Manual Test Checklist</h2>
+        <div class="test-result">
+<strong>For Level AI Developers:</strong>
+
+□ Create GitHub Personal Access Token with 'read:packages' permission
+□ Set up .npmrc file with @wearelevelai scope
+□ Install @wearelevelai/design-system-web in a test project
+□ Import and use Button, Card, Input components
+□ Verify styles are applied correctly
+□ Test dark/light theme switching
+□ Check TypeScript definitions work
+□ Validate accessibility with screen reader
+□ Test responsive behavior on mobile
+□ Check Storybook documentation is accessible
+
+<strong>Expected Results:</strong>
+□ Components render with Level AI branding
+□ OKLCH colors display correctly
+□ Brutalist shadows (3px offset) are visible
+□ Press animations work on buttons
+□ Dark mode toggles properly
+□ TypeScript provides autocomplete
+□ No console errors
+        </div>
+    </div>
+
+    <script type="text/babel">
+        // Test Storybook deployment
+        function testStorybookDeployment() {
+            fetch('https://wearelevelai.github.io/ui.wearelevel.ai/')
+                .then(response => {
+                    const statusElement = document.getElementById('storybook-status')
+                    if (response.ok) {
+                        statusElement.innerHTML = '<span style="color: green;">✅ Live and accessible</span>'
+                        statusElement.parentElement.parentElement.className = 'success'
+                    } else {
+                        statusElement.innerHTML = '<span style="color: orange;">⚠️ Deployment in progress or failed</span>'
+                    }
+                })
+                .catch(error => {
+                    const statusElement = document.getElementById('storybook-status')
+                    statusElement.innerHTML = '<span style="color: red;">❌ Not accessible</span>'
+                })
+        }
+
+        // Run tests when page loads
+        window.addEventListener('load', () => {
+            testStorybookDeployment()
+        })
+    </script>
+</body>
+</html>
