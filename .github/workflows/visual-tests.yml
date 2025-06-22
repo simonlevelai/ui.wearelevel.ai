@@ -21,13 +21,13 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Setup npmrc for CI
+        run: echo "registry=https://registry.npmjs.com" > .npmrc
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 9.0.0
-
-      - name: Setup npmrc for CI
-        run: echo "registry=https://registry.npmjs.com" > .npmrc
         
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
