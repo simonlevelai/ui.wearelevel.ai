@@ -25,7 +25,7 @@ const preview: Preview = {
       },
       light: { 
         ...themes.normal,
-        appBg: '#ffffdc',
+        appBg: 'oklch(0.9664 0.0011 197.1385)',
         appContentBg: '#ffffff',
         appBorderColor: '#e5e7eb',
         brandTitle: 'Level AI Design System',

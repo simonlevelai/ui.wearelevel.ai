@@ -129,6 +129,38 @@ export {
   CommandSeparator,
 } from './components/ui/command'
 export { DataTable } from './components/ui/data-table'
+export {
+  Sidebar,
+  SidebarHeader,
+  SidebarContent,
+  SidebarFooter,
+  SidebarGroup,
+  SidebarGroupLabel,
+  SidebarItem,
+  SidebarLink,
+  sidebarVariants,
+} from './components/ui/sidebar'
+export {
+  Header,
+  HeaderBrand,
+  HeaderNav,
+  HeaderNavItem,
+  HeaderActions,
+  HeaderDivider,
+  headerVariants,
+} from './components/ui/header'
+export {
+  Footer,
+  FooterContent,
+  FooterSection,
+  FooterGrid,
+  FooterTitle,
+  FooterLink,
+  FooterText,
+  FooterDivider,
+  FooterBottom,
+  footerVariants,
+} from './components/ui/footer'
 
 // Providers
 export { ThemeProvider } from './components/theme-provider'
@@ -142,3 +174,6 @@ export type { InputProps } from './components/ui/input'
 export type { TextareaProps } from './components/ui/textarea'
 export type { BadgeProps } from './components/ui/badge'
 export type { ToastProps, ToastActionElement } from './components/ui/toast'
+export type { SidebarProps } from './components/ui/sidebar'
+export type { HeaderProps } from './components/ui/header'
+export type { FooterProps } from './components/ui/footer'
